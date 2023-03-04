@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](/Datastorage/images/c1.png)
-![Mobile](/Datastorage/images/c2.png)
+![Desktop](/images/c1.png)
+![Mobile](/images/c2.png)
 
 ### Links
 
-- Live Site URL: [Data storage](https://your-live-site-url.com)
+- Live Site URL: [Fylo Data storage](https://stately-quokka-d6b815.netlify.app/)
 
 ## My process
 
