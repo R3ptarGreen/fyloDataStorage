@@ -1,0 +1,11 @@
+{
+  "name": "datastorage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass -w scss:css"
+  },
+  "author": "Edgar Mendez",
+  "license": "ISC"
+}

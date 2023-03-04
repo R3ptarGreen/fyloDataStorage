@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 87.5%;
+  font-family: "Raleway";
+  padding-top: 10vh;
+}
+
+body {
+  background-color: hsl(229, 57%, 11%);
+}
+
+.background {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background-image: url(/Datastorage/images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 0;
+  bottom: 0;
+}
+
+.container {
+  padding: 0 4rem;
+  margin-top: 30vh;
+  width: 70%;
+  height: 25rem;
+  margin: auto;
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+}
+
+.container__article {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: hsl(228, 56%, 26%);
+  right: 0;
+  left: 0;
+}
+
+.container__article--small {
+  width: 18rem;
+  height: 12rem;
+  border-radius: 0.5rem 5rem 0.5rem 0.5rem;
+}
+
+.container__img {
+  width: 8rem;
+}
+
+.container__figure {
+  margin-top: 2rem;
+}
+
+.container__img--file {
+  margin: 0 2%;
+  height: 2.6rem;
+  width: 2.8rem;
+  background-color: hsl(229, 57%, 11%);
+  border: 1em solid hsl(229, 57%, 11%);
+  border-radius: 0.5em;
+}
+
+.container__article--large {
+  width: 30rem;
+  height: 10rem;
+}
+
+.container__p--tiny {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-weight: 100;
+}
+
+.container__p--flex {
+  width: 100%;
+  display: flex;
+  gap: 2em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container__progres-bar {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  height: 1rem;
+  background-color: hsla(229, 57%, 11%, 0.5);
+  border-radius: 1em;
+}
+
+.container__bar {
+  background: linear-gradient(90deg, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 80%);
+  width: 80%;
+  height: 1rem;
+  display: flex;
+  gap: 0;
+  justify-content: end;
+  align-items: center;
+  border-radius: 1em;
+}
+
+.container__dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.1rem;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+
+.container__alert {
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+  min-height: 4rem;
+  position: absolute;
+  background-color: aliceblue;
+  top: 15em;
+  right: 19%;
+  border-radius: 0.5em;
+}
+
+.container__p--uppercase {
+  font-size: 0.8em;
+  color: hsl(229, 7%, 55%);
+  font-weight: 700;
+}
+
+.container__h1 {
+  font-size: 3em;
+}
+
+.container__triangle {
+  width: 2rem;
+  height: 2rem;
+  background-color: aliceblue;
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: 70%;
+}
+
+.container__span--bold {
+  font-weight: 700;
+  color: white;
+}
+
+footer {
+  position: relative;
+  color: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1080px) {
+  .container__alert {
+    right: 16%;
+  }
+  .container__img--file {
+    height: 2.4rem;
+    width: 2.6rem;
+  }
+  .container__figure {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 850px) {
+  .contaner__img {
+    width: 6rem;
+  }
+  .container__alert {
+    right: 18%;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    width: 70%;
+    height: 22rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    gap: 1em;
+    grid-template-areas: "n1" "n2";
+  }
+  .background {
+    background-image: url(/Datastorage/images/bg-mobile.png);
+    top: 0;
+    background-repeat: repeat;
+    height: 50rem;
+  }
+  .container__article {
+    padding: 1.5rem;
+    width: 21rem;
+  }
+  .container__article--small {
+    grid-area: n1;
+  }
+  .container__article--large {
+    grid-area: n2;
+  }
+  .container__figure {
+    margin-top: 3rem;
+  }
+  .container__img--file {
+    margin: 0 2%;
+    height: 2.8rem;
+    width: 3rem;
+    background-color: hsl(229, 57%, 11%);
+    border: 1em solid hsl(229, 57%, 11%);
+    border-radius: 0.5em;
+  }
+  .container__p--tiny {
+    text-align: center;
+  }
+  .container__alert {
+    width: 11rem;
+    height: 4rem;
+    top: 20.5rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+  .container__triangle {
+    visibility: hidden;
+  }
+  footer {
+    margin-top: 4rem;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
