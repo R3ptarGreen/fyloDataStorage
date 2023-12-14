@@ -5,7 +5,7 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [The challenge](#the-challenge) 
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
